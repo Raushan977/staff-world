@@ -77,7 +77,7 @@ import HRDepartment from './Components/HRDepartment'
         <Route path='/employee_detail/empDocument' element={<EmpDocument />}></Route>
         <Route path='/employee_detail/empTask' element={<EmpTask />}></Route>
         </Route>
-        {/* Employee Section Ends */}
+        {/* Employee Section  */}
 
         {/* Support Section Start*/}
 
