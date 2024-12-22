@@ -47,18 +47,25 @@ const Settings = () => {
             </div>
           </div>
         </div>
+        
         <div className='setting-list'>
           <div className='setting-list-1'>
             <div className='d-flex'>
               <div className='me-3 ms-1'>
                 <i className="fs-2 bi bi-diagram-2"></i>
               </div>
-              <div><span className='text-seting'>My Departments</span><br /><span className='text-seting-1'>Add or remove departments</span></div>
+              <Link
+            to="/dashboard/AddDepartments"
+            className="nav-link"
+            >
+              <div><span className='text-seting'>Add Departments</span><br /><span className='text-seting-1'>Add or remove departments</span></div>
+              </Link>
             </div>
             <div className='me-4 mt-3'>
               <i className="fs-5 bi bi-arrow-right"></i>
             </div>
           </div>
+        
         </div>
         <div className='setting-list-lb'>
           <div className='setting-list-1'>

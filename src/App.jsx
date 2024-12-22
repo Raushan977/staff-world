@@ -1,4 +1,4 @@
-import './App.css'
+ import './App.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import Login from './Components/Login'
 import { BrowserRouter, Routes, Route, useNavigate } from 'react-router-dom'
@@ -51,8 +51,10 @@ import KycVerification from './Components/KycVerification'
 import KycUpdate from './Components/KycUpdate'
 import PaySalary from './Components/PaySalary'
 import EditCompanyDetails from './Components/EditCompanyDetails'
+import AddDepartments from './Components/AddDepartments'
+import HRDepartment from './Components/HRDepartment'
 
-function App() {
+ function App() {
 
 
   return ( 
@@ -125,9 +127,10 @@ function App() {
           <Route path='/dashboard/settings' element={<Settings />}></Route>
           <Route path='/dashboard/profile' element={<Profile />}></Route>
           <Route path='/dashboard/editCompanyDetails' element={<EditCompanyDetails />}></Route>
+          <Route path='/dashboard/AddDepartments' element={<AddDepartments />}></Route>
           <Route path='/dashboard/add_employee' element={<AddEmployee />}></Route>
-          <Route path='/dashboard/edit_employee/:employeeId' element={<EditEmployee />}
-          ></Route>
+          <Route path='/dashboard/edit_employee/:employeeId' element={<EditEmployee />}></Route>
+          <Route path='/dashboard/HRDepartment/ ' element={<HRDepartment  />}></Route>
 
         </Route>
       </Routes>
@@ -135,4 +138,4 @@ function App() {
   )
 }
 
-export default App
+export default App;
